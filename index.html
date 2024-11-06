@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="formsize">
+        <h1 id="title">Books Club Form</h1>
+
+        <form id="survey-form">
+            <p id="description">This is a registration form for those who wants to join the book club*</p>
+            <fieldset>
+                <label for="name" id="name-label">Enter Your First Name: <input class="arafortext" id="name"
+                        type="text" required placeholder="Ex: Irena" /></label>
+                <label for="email" id="email-label">Enter Your Email: <input class="areafortext" id="email" type="email"
+                        required placeholder="Ex: someone@gmail.com" /></label>
+                <label for="number" id="number-label">Enter Your Age: <input class="areafortext" id="number"
+                        type="number" required min="16" max="99" placeholder="from 16 to 99"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Would you like to join us online or offline?</legend>
+                <label for="online"><input id="online" type="radio" name="account-type" class="inline" checked
+                        value="online" />
+                    Online</label>
+                <label for="offline"><input id="offline" type="radio" name="account-type" class="inline"
+                        value="offline" /> Offline</label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">How often do you read?
+                    <select id="dropdown" name="periodicity">
+                        <option value="">(please select one)</option>
+                        <option value="1">every day</option>
+                        <option value="2">three/twice times per week</option>
+                        <option value="3">not sure</option>
+                        <option value="4">want to start reading</option>
+                        <option value="5">don't want to answer</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>What is your favorite genre of book?</legend>
+                <label class="checkboxes"><input type="checkbox" value="science_fiction" /> Science
+                    fiction</label>
+                <label class="checkboxes"><input type="checkbox" value="fantasy" /> Fantasy</label>
+                <label class="checkboxes"><input type="checkbox" value="mystery" /> Mystery</label>
+                <label class="checkboxes"><input type="checkbox" value="horror" /> Horror</label>
+                <label class="checkboxes"><input type="checkbox" value="romance_novel" /> Romance
+                    novel</label>
+                <label class="checkboxes"><input type="checkbox" value="thriller" /> Thriller</label>
+                <label class="checkboxes"><input type="checkbox" value="other" /> Other</label>
+            </fieldset>
+            <fieldset>
+                <label for="questions">Here you can write your questions:
+                    <textarea id="questions" name="bio" rows="6" cols="30"
+                        placeholder="write your question(s)"></textarea>
+                </label>
+
+            </fieldset>
+            <button type="submit" id="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
